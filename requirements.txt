@@ -1,0 +1,6 @@
+anthropic
+requests
+openai
+pydantic
+instructor
+ollama-instructor

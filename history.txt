@@ -1,0 +1,9 @@
+# Jekyll Site Modification History
+
+2023-07-13: Added Lightbox2 functionality to make images clickable and enlargeable. Modified _includes/custom-head.html to add CSS and _includes/custom-foot.html to add JavaScript code that automatically converts images in posts to use lightbox without requiring manual HTML changes for each image.
+
+2023-07-14: Fixed Lightbox2 implementation by switching to a more reliable CDN (jsDelivr) and using the lightbox-plus-jquery bundle. Added error handling and a delay to ensure the library loads properly before being used. Also expanded image selector to include article images.
+
+2023-07-15: Added Subdomain Link Launcher tool (formerly Bug Bounty Recon Launcher). Created subdomain_link_launcher.md for the content and _layouts/subdomain_link_launcher.html for the layout. This tool allows users to enter a domain name and automatically launch multiple reconnaissance tabs across various platforms for bug bounty hunting.
+
+2023-07-16: Improved the Subdomain Link Launcher layout by fixing text indentation issues, adding a proper heading, and improving the input and button layout. Reduced spacing between elements and added proper alignment for better user experience. 

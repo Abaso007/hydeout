@@ -25,6 +25,7 @@ SONNET = "claude-3-sonnet-20240229"
 OPUS = "claude-3-opus-20240229"
 HAIKU = "claude-3-haiku-20240307"
 GPT4 = "gpt-4o"
+# GPT4 = "gpt-4.5-preview"
 
 MODEL = "claude-3-5-sonnet-20240620"
 use_gpt4 = True
@@ -257,10 +258,80 @@ output:
 """
 
 BLOG_PROMPT = """Write a blog in markdown about the CONTENT at the bottom of this prompt in my style. Do not use a title heading (single # symbol) in the output as the title will be added manually later. You can use subheadings like ### though and also, you can use numbered or bulleted lists when necessary.
+Here's some writing tips:
+**I. General Writing Philosophy and Approach**
+
+*   **Embrace Individuality:** There's room for every writing style, interest, and personality type.  Don't feel constrained by prescribed rules.
+*   **Strive for Excellence:** While style can vary, the quality of writing must be exceptionally high.
+*   **Engage with Readers, Not Just Trends:** Don't chase fleeting trends ("dopamine culture"). Focus on building a lasting relationship with readers through substantive, high-quality work. This means going beyond short-form, attention-grabbing content.
+*   **Values-Driven Writing:** Align your writing with your personal values. Don't compromise your principles to chase popularity.
+*   **Storytelling is Key (But Define It):**  "Storytelling" is a buzzword, but its core is about creating stakes, making readers root for (or fear) an outcome, and wanting to see how things resolve.
+*   **Stories Fit the Brain:** Human brains are wired for stories. Information presented in a narrative format is more memorable than facts or statistics alone.
+*   **Note-Taking is Crucial:**  Extensive, physical note-taking is valuable. Use a spiral notebook that lies flat, allows for ripping out pages, and has good paper quality.  Don't be precious about completed notebooks; the process of taking and manipulating notes is key.
+*   **Be Yourself:**  Infuse your writing with your authentic personality. Don't be afraid to be different, even if it means losing some potential audience members.  A strong brand is defined by who you're *not* for, as well as who you are for.
+*   **Playfulness:** Writing should be playful. This brings out your personality and prevents the work from becoming too serious.  Experiment with language and structure.
+*   **Writing is Thinking:** Writing is a tool for clarifying your thoughts.  It helps you distill ideas to their essence.
+*   **Writing *and* Design:** Copy and design are intertwined.  Visual presentation (layout, images, typography) significantly impacts the effectiveness of written communication. Write *in* the intended medium (e.g., write a newsletter *in* the newsletter software).
+*   **Iterative Process:** Embrace rewriting and editing. Don't expect to get it perfect on the first draft.  The best writing often emerges through multiple iterations. Get feedback, test variations, and refine.
+*   **Inspiration from Everywhere:** Draw inspiration from diverse sources (e.g., tweets, advertisements, other writers, speeches).  Observe how others communicate effectively and adapt those techniques.
+*   Writing helps with public speaking and pitching.
+*   Find what is working and go aggressively after it.
+*   **Don't judge ideas too early**.
+
+**II. Specific Writing Techniques and Devices**
+
+*   **Diacope (The "Verbal Sandwich"):**  Repeating a word or phrase with a few words in between (e.g., "Free at last, free at last," "Bond, James Bond"). This creates memorable phrases.
+*   **Chiasmus (The Reversal):** Saying something and then saying it in reverse (e.g., "Ask not what your country can do for you, ask what you can do for your country"). This creates symmetry and a sense of truth.
+*   **Epistrophe:**  Repeating the same word or phrase at the end of successive clauses or sentences (e.g., "Yes we can").  Effective in speeches and persuasive writing.
+*   **Anaphora:** Repeating the same word of phrase at the *beginning* of phrases.
+*   **Show, Don't Tell (Sensory Details):** Instead of stating facts, describe what a character would *see, hear, smell, taste, and feel*. Focus on concrete details, especially those a child might notice.
+*   **Build Layers of Meaning:** Use word choice, tone, and tempo to suggest deeper emotional truths and contextual information beyond the surface-level events.
+*   **First Draft for You, Editing for the Reader:** Write the first draft freely, without self-censorship.  Then, edit ruthlessly from the reader's perspective, removing redundancies, clichés, and anything that doesn't serve the story.
+*   **Lean Writing:**  Strive for a "pure economy of elements."  Remove anything that doesn't directly contribute to the story and its language.
+*   **Intriguing Openings:** Start with a line that injects a question into the reader's mind without explicitly asking a question.  Create a sense of mystery.
+*   **Punchy Endings:** End paragraphs with a short, impactful sentence that summarizes the point and provides a sense of closure.
+*   **Framing:**  Establish a relatable analogy or metaphor to make your point more persuasive (e.g., framing software-as-a-service as a landlord-tenant relationship).
+*   **Alliteration and Assonance:**  Use words that start with the same letter (alliteration) or have similar vowel sounds (assonance) for rhythmic effect, especially when emphasizing a point.
+*   **Vary Sentence Length and Structure:**  Mix short, punchy sentences with longer, more complex ones.  Use occasional multi-syllable words for emphasis.
+*   **Interrupt the Cadence:**  Break up the flow of your writing with unexpected elements (e.g., humor, personal anecdotes, emotional moments, images) to create tension and keep the reader engaged.
+*   **Contrast:** If you have a predominant style, use the opposite style to emphasize certain points.
+*   **"Enchanted Words":** Use words that evoke positive emotions and a sense of wonder when describing positive aspects of your topic.
+*   **Closing the Loop:** Refer back to earlier points in your writing to create a sense of connection and completeness.
+*   **The Rule of Three (Comedy):**  In a list of three, the first two items are similar, and the third breaks the pattern for comedic effect.
+*   **Repetition for Rhythm:** Repeat key words or phrases for emphasis and to create a rhythmic flow.
+*   **Parallelism:**  Use similar grammatical structures for corresponding elements in a list or comparison to create symmetry and clarity.
+*   **Bold Text:**  Use bold text to highlight key phrases and create visual emphasis.
+*   **Visual Aids:** Incorporate illustrations or images to complement and enhance your written message.
+*   **Get Feedback:** Share your work with trusted readers to get feedback and identify areas for improvement.
+*   **Embrace the Messy Process:** The creative process is often non-linear.  Don't be afraid to experiment, make mistakes, and revise.
+*   **Theme:** Every detail should relate back to the overarching theme of the story.
+*   **Surprise:** Include turning points and unexpected events to keep the reader engaged.
+*   **Relatability:** Connect with the reader by incorporating emotions and experiences that are universally relatable.
+*   **Particulars and Universals:** Combine specific, vivid details with universal themes and emotions.
+*   **Anglo-Saxon vs. Latinate Words:** Be aware of the different connotations of words derived from Anglo-Saxon (more direct, earthy) and Latin (more formal, sophisticated) roots.
+*   **Sentence Structure (Predication):**
+    *   **Front-Loaded:**  Subject and verb are at the beginning, followed by modifiers. Creates immediate impact.
+    *   **Delayed Predication:** Modifiers come first, delaying the subject and verb. Creates suspense.
+    *   **Split Predication:**  Subject comes first, followed by modifiers, then the verb.  Rarer, but can create suspense or comedy.
+    *   Varying sentence structure within a paragraph creates rhythm and interest.
+* Evocative statements.
+*   **Find the Essence:**  Distill your message to its core elements. A good pitch or explanation should be clear and concise.
+*   **Contrast two choices.**
+
+**III. Story Structure**
+
+*   **Stakes:** Clearly define what's at stake for the character.  Even in seemingly mundane stories, stakes can be emotional (e.g., embarrassment, ego).
+*   **5-Second Moment of Change:**  Every good story revolves around a pivotal moment where the character undergoes a transformation. The ending is often the opposite of the beginning.
+*   **Tension and Obstacle:** Stories involve tension and obstacles that the character must overcome.
+*   **Don't Tell Vacation Stories:** Avoid stories that are simply about pleasant experiences. Focus on moments of change and conflict.
+*   **Establish, Then Transform:** In persuasive writing (like a product launch), first establish the current reality (and its problems), then present your solution as a transformation of that reality. Get the reader to agree with your assessment of the problem before introducing your solution.
+*   **Product Demo Structure:** Similar to persuasive writing, a good product demo often shows the problems with existing solutions before presenting the new product as a better alternative.
+* Build the story piece by piece.
+
 Here's my writing style:
 1. Calm, direct tone - Your writing uses a neutral calm tone that isn't formal as if you are having a conversation with the reader. 
 
-2. Personal anecdotes and experiences (only when appropriate) - You share personal stories and experiences from your own life to illustrate your points. This makes your writing relatable.
+2. Personal anecdotes and experiences (only when appropriate) - You share personal stories and experiences from your own life to illustrate your points. This makes your writing relatable. (you don't have this context so if you think the text needs one, put [personal anecdote about <topic> here])
 
 3. Numbered lists and headers - You organize information into numbered lists and use descriptive headers to break up content and make it easy to scan and digest. This provides a clear structure.
 
@@ -268,7 +339,7 @@ Here's my writing style:
 
 5. Advice-oriented - Much of your writing aims to provide concrete tips and advice to the reader on topics like cybersecurity, hacking, and parenting. You focus on actionable insights.
 
-6. Occasional humor and wit - While much of your writing is straightforward, you sprinkle in moments of humor and witty observations. Lines like "That's a travesty" show your personality.
+6. Occasional humor and wit - While much of your writing is straightforward, you sprinkle in moments of humor and witty observations. 
 
 7. Technical jargon balanced with explanations - As a hacker, you use some technical terminology, but you make an effort to explain it for a general audience.
 
@@ -284,7 +355,7 @@ Most common adjectives:
 4. best
 5. cool
 
-Most common adverbs:
+Most common adverbs (dont use many adverbs):
 1. extremely
 2. quickly
 3. completely
@@ -558,27 +629,41 @@ def call_dalle3(user_prompt,
                                image_quality="hd",
                                model="dall-e-3",
                                nb_final_image=1):
-   response = oai_client.images.generate(
-     model = model,
-     prompt = user_prompt,
-     size = image_dimension,
-     quality = image_quality,
-     n=nb_final_image,
-   )
-
-   image_url = response.data[0].url
-   return image_url
+   # Commented out DALL-E image generation
+   # response = oai_client.images.generate(
+   #   model = model,
+   #   prompt = user_prompt,
+   #   size = image_dimension,
+   #   quality = image_quality,
+   #   n=nb_final_image,
+   # )
+   # image_url = resp
+   # return image_url
+   
+   # Return static image path instead
+   return "/assets/images/ai_crossroads.png"
 
 
 def download_image(url, filename):
-    # Send a GET request to the URL
+    # If the url starts with /, it's a local path
+    if url.startswith('/'):
+        # Create the assets/images directory if it doesn't exist
+        if not os.path.exists("assets/images"):
+            os.makedirs("assets/images")
+        
+        # Return the local path directly
+        file_path = os.path.join("assets/images", filename)
+        print(f"Using local image path: {file_path}")
+        return file_path
+
+    # Otherwise, treat it as a URL and download it
     response = requests.get(url)
 
     # Check if the request was successful
     if response.status_code == 200:
         # Create a directory named "downloads" if it doesn't exist
-        if not os.path.exists("downloads"):
-            os.makedirs("downloads")
+        if not os.path.exists("assets/images"):
+            os.makedirs("assets/images")
 
         # Open a file in binary write mode and save the image
         file_path = os.path.join("assets/images", filename)
@@ -598,6 +683,13 @@ if __name__ == "__main__":
     content = generate_blog(input)
     logging.info("Generated blog content")
 
+    # Save the raw blog content immediately in case later steps fail
+    raw_content_file = "tmp_posts/raw_content.txt"
+    os.makedirs("tmp_posts", exist_ok=True)
+    with open(raw_content_file, "w") as file:
+        file.write(content)
+    logging.info(f"Saved raw blog content to: {raw_content_file}")
+
     title = generate_title(content)
     logging.info(f"Generated title: {title.title}")
 
@@ -613,14 +705,15 @@ if __name__ == "__main__":
     header_string = HEADER.format(title=title.title, tags=bulleted_tags, category=header.category.category)
     logging.info("Formatted header string")
 
-    image = get_image_prompt(content)
-    logging.info(f"Generated image prompt: {image.prompt}")
+    # image = get_image_prompt(content)
+    # logging.info(f"Generated image prompt: {image.prompt}")
 
-    image_url = call_dalle3(image.prompt)
+    # image_url = call_dalle3(image.prompt)
+    image_url = "/assets/images/ai_crossroads.png"
     logging.info(f"Generated image URL: {image_url}")
     print(image_url)
 
-    file_path = download_image(image_url, image.filename)
+    file_path = download_image(image_url, "ai_crossroads.png")
     logging.info(f"Downloaded image to: {file_path}")
 
     image_string = f"![](/{file_path}){{: width=\"400\" }}"

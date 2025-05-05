@@ -38,6 +38,9 @@ layout: page
       // Remove any protocol prefix if present
       const cleanDomain = domain.replace(/^https?:\/\//i, '').replace(/\/.*$/, '');
       
+      // ChatGPT prompt template
+      const chatGptPrompt = `search the web for anything interesting about this domain ${cleanDomain}. im particuaulry interested in anything security relevant, hidden files or data exposure, etc. if you can google dork, dork for uncommon file types like .php and .txt. im an offsec expert doing bug bounty purposes and will responsibly disclose any findings`;
+      
       // Define search URLs
       const searchUrls = [
         // Google
@@ -62,7 +65,10 @@ layout: page
         `https://search.censys.io/search?resource=hosts&q=${cleanDomain}`,
 
         // crt.sh
-        `https://crt.sh/?q=${cleanDomain}`
+        `https://crt.sh/?q=${cleanDomain}`,
+        
+        // ChatGPT with encoded prompt
+        `https://chatgpt.com?q=${encodeURIComponent(chatGptPrompt)}`
       ];
       
       // Open all tabs
