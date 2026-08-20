@@ -43,7 +43,7 @@ Shoutout to dtype, the dev who fixed it.
 ![NAO crediting rez0 for the overflow report](/assets/images/nethack-nao-credit.png){: width="700" }
 *Thanks, NAO!*
 
-[NAO](https://www.alt.org/nethack/) (nethack.alt.org) is the major server where most people play. The other main one is [Hardfought](https://www.hardfought.org/nethack/), but NAO is the vanilla server. All the wishes, deaths, and ascensions there get posted in [IRC](https://www.alt.org/nethack/irc.php).
+[NAO](https://www.alt.org/nethack/) (nethack.alt.org) is the major server where most people play. The other main one is [Hardfought](https://www.hardfought.org/nethack/), but NAO is kind of a more vanilla server. All the wishes, deaths, and ascensions there get posted in [IRC](https://www.alt.org/nethack/irc.php).
 
 Duping wishes and making tons of wishes is naturally very noisy. Other players were annoyed and started tagging devs. The devs got to fixing it before I used the best and easiest way to rack up an insane score: duping dilithium crystals.
 
