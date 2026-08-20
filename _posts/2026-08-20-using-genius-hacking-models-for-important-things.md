@@ -3,7 +3,7 @@ title: "Using Genius Hacking Models for Important Things: Cheating to Get the Ne
 layout: post
 date: 2026-08-20 00:00:00 -0400
 description: "How I used GPT-5.6 Daybreak Blue to find an on-demand NetHack 5.0 crash, duplicate items, farm krakens, and get the high score on NAO."
-image: /assets/images/nethack-nao-credit.png
+image: /assets/images/nethack-kraken-farm.png
 categories:
   - hacking
 tags:
@@ -11,7 +11,7 @@ tags:
   - hacking
   - cybersecurity
 ---
-
+![](/assets/images/nethack-kraken-farm.png){: width="600" }
 This is how I used GPT-5.6 Daybreak Blue to find a buffer overflow, crash the game in order to dupe items, and get the high score on the NetHack 5.0 leaderboard.
 
 I love NetHack. It's such an awesome game. And I love hacking/bug hunting. So when I met Demo (aka [turb0](https://x.com/7urb01)), who is an epic bug bounty hunter and has ascended NetHack (and variants) around 300 times, I asked him a million questions.
@@ -86,4 +86,4 @@ I also [post my thoughts on Twitter/X](https://x.com/rez0__).
 <meta property="og:url" content="https://josephthacker.com/hacking/2026/08/20/using-genius-hacking-models-for-important-things.html" />
 <meta property="og:title" content="Using Genius Hacking Models for Important Things: Cheating to Get the NetHack 5.0 High Score" />
 <meta property="og:description" content="How I used GPT-5.6 Daybreak Blue to find an on-demand NetHack 5.0 crash, duplicate items, farm krakens, and get the high score on NAO." />
-<meta property="og:image" content="https://josephthacker.com/assets/images/nethack-nao-credit.png" />
+<meta property="og:image" content="https://josephthacker.com/assets/images/nethack-kraken-farm.png" />
