@@ -99,6 +99,10 @@ button.disqus-load {
   margin-top: 1em;
 }
 
+.post-body img {
+  border: 1px solid $border-color;
+}
+
 // Featured posts section
 .featured-posts {
   margin: -4rem (-$section-spacing * 2) 2rem;

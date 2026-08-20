@@ -1,5 +1,5 @@
 ---
-title: "Using Genius Hacking Models for Important Things: Cheating to Get the NetHack 5.0 High Score"
+title: "Using Genius AI Models for Important Things: Cheating at NetHack"
 layout: post
 date: 2026-08-20 00:00:00 -0400
 description: "How I used GPT-5.6 Daybreak Blue to find an on-demand NetHack 5.0 crash, duplicate items, farm krakens, and get the high score on NAO."
@@ -84,6 +84,6 @@ I also [post my thoughts on Twitter/X](https://x.com/rez0__).
 <meta name="twitter:site" content="@rez0__" />
 <meta name="twitter:creator" content="@rez0__" />
 <meta property="og:url" content="https://josephthacker.com/hacking/2026/08/20/using-genius-hacking-models-for-important-things.html" />
-<meta property="og:title" content="Using Genius Hacking Models for Important Things: Cheating to Get the NetHack 5.0 High Score" />
+<meta property="og:title" content="Using Genius AI Models for Important Things: Cheating at NetHack" />
 <meta property="og:description" content="How I used GPT-5.6 Daybreak Blue to find an on-demand NetHack 5.0 crash, duplicate items, farm krakens, and get the high score on NAO." />
 <meta property="og:image" content="https://josephthacker.com/assets/images/nethack-kraken-farm.png" />
